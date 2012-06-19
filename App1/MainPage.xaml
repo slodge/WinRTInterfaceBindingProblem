@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <StackPanel>
+                <local:MyUserControl1 DirectCommand="{Binding Command1}" InterfaceCommand="{Binding Command1}" InterfaceICommand="{Binding Command1}" IndirectCommand="{Binding Command1}" />
+                    <TextBlock Text="Num presses:" FontSize="20" />
+<TextBlock Text="{Binding NumTimesPressed}" FontSize="28"/>
+                </StackPanel>
+    </Grid>
+</Page>
